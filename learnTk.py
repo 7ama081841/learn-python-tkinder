@@ -15,7 +15,7 @@ app.title("mohamed chaabani") # t5alini nbaled el title mta3 el app
 
 app.config(background='gray') # ken n7eb nbadel el background mta3 el app yelzem n7otha fel config()
 
-app.iconbitmap("C:\\Users\\Admin\\Desktop\\learn Desktop app with python\\helmet_icon_227551.ico") # t5alini n7ot icon lel app
+app.iconbitmap("C:\\Users\\Admin\\Desktop\\learn Desktop app with python\\learn-python-tkinder\\helmet_icon_227551.ico") # t5alini n7ot icon lel app
 
 # app.minsize(300 , 300) # t5alini na3ti min width w min height lel app
 
