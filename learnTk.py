@@ -1,3 +1,5 @@
+from cProfile import label
+from cgitb import text
 from textwrap import fill
 from tkinter import * # ta3mali imporation mn tkinter
 
@@ -94,17 +96,26 @@ scroll = Scrollbar(app , orient=VERTICAL)
 scroll.pack(side=RIGHT , fill=Y )
 
 # var = Checkbutton(paraint , text='')
-chack_1 = Checkbutton(fr1 , text='mohamed') # Checkbutton te5dem kima chackbox 
-chack_2 = Checkbutton(fr1 , text="safe")
-chack_3 = Checkbutton(fr1 , text="yassine")
-chack_4 = Checkbutton(fr1 , text="najm eddine")
+check_1 = Checkbutton(fr1 , text='mohamed') # Checkbutton te5dem kima checkbox 
+check_2 = Checkbutton(fr1 , text="safe")
+check_3 = Checkbutton(fr1 , text="yassine")
+check_4 = Checkbutton(fr1 , text="najm eddine")
 
-chack_1.place(x=170 , y=115)
-chack_2.place(x=170 , y=145)
-chack_3.place(x=170 , y=175)
-chack_4.place(x=170 , y=205)
+check_1.place(x=170 , y=115)
+check_2.place(x=170 , y=145)
+check_3.place(x=170 , y=175)
+check_4.place(x=170 , y=205)
 
+# var = Menubutton(paraint , text='' , relief=SUNKEN )
+mn = Menubutton(fr1 , text='learn tkinter' , relief=SUNKEN ) # te5dem menu
+mn.place(x=170 , y=235)
 
+ss = Menu(mn) # lezemni na3mel selection lel menu eli 7ajti beha
+mn["menu"] = ss # yelzemni nekteb menu kounchi metemchich
+ss.add_checkbutton(label="html") # haka bech ba3mali list menu 
+ss.add_checkbutton(label="css")  
+ss.add_checkbutton(label="js")  
+ss.add_checkbutton(label="python")  
 
 
 app.mainloop() # w ba3d n5adem el app bel mainloop() 
