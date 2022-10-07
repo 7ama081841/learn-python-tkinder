@@ -53,9 +53,10 @@ btn2.place(x=0 , y=0 )
 lbl1 = Label(fr1 , text="mohamed chaabeni" , fg="red" , bg='royalblue',font=1 )
 lbl1.place(x=0 , y=40 ) # el place() lezma
 
-input_1 = Entry(fr1 , justify='center') # el Entry() te5dem input
+input_1 =  Entry(fr1 , justify='center') # el Entry() te5dem input
 input_1.place(x=0 , y=65)
-
+if(input_1=="a"):
+    print(True)
 input_2 = Entry(fr1 , justify='right' )
 input_2.place(x=130 , y=65)
 
@@ -116,6 +117,26 @@ ss.add_checkbutton(label="html") # haka bech ba3mali list menu
 ss.add_checkbutton(label="css")  
 ss.add_checkbutton(label="js")  
 ss.add_checkbutton(label="python")  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 app.mainloop() # w ba3d n5adem el app bel mainloop() 
